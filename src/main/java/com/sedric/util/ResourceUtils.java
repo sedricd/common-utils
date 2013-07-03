@@ -1,6 +1,5 @@
 package com.sedric.util;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -8,7 +7,6 @@ import java.util.Properties;
 
 import javax.management.RuntimeErrorException;
 
-import org.ansj.dic.DicReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -125,23 +123,4 @@ public class ResourceUtils {
 		}
 	}
 
-	public static void main(String[] args) {
-		File file = new File(getRealPathReferClassPath(DicReader.class, "org/ansj/dic/arrays.dic"));
-		if (file.exists()) {
-			System.out.println("success");
-		} else {
-			System.out.println("fail");
-		}
-		System.out.println(getRealClassPath(DicReader.class));
-
-		Properties pro = new Properties();
-
-		loadResourceReferClassPath(pro, ReflectUtils.class, "a.properties");
-
-		System.out.println(pro.get("name"));
-
-		System.out.println(Thread.currentThread().getContextClassLoader().getResource("").getPath());
-
-		System.out.println(DicReader.class.getClassLoader().getResource("").getPath());
-	}
 }

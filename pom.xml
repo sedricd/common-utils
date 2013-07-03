@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.sedric</groupId>
-	<artifactId>common-util</artifactId>
+	<artifactId>common-utils</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
@@ -13,12 +13,6 @@
 	</properties>
 
 	<dependencies>
-
-		<dependency>
-			<groupId>com.sedric</groupId>
-			<artifactId>ansj</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 
 		<dependency>
 			<groupId>commons-lang</groupId>
