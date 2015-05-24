@@ -10,6 +10,7 @@
 		<slf4j.version>1.7.0</slf4j.version>
 		<poi.version>3.9</poi.version>
 		<opencsv.version>2.3</opencsv.version>
+		<spring.version>3.2.2.RELEASE</spring.version>
 	</properties>
 
 	<dependencies>
@@ -41,7 +42,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
-			<version>3.1.0.RELEASE</version>
+			<version>${spring.version}</version>
 		</dependency>
 
 		<!-- excel -->
